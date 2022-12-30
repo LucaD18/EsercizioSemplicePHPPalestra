@@ -1,0 +1,88 @@
+<html lang="IT">
+
+<head>
+    <title>Form registrazione palestra FitDent</title>
+    <link rel="stylesheet" href="stylesheets/espalestraden.css">
+
+</head>
+
+<body>
+    <script src="scripts/calcoloTotale.js"></script>
+    <div class="navbar">
+        <ul>
+            <li class="nav"><a class="active" href="index.html">Home</a></li>
+            <li class="nav"><a href="inostricorsi.html">I nostri corsi</a></li>
+            <li class="nav"><a href="formregistrati.html">Registrati</a></li>
+
+        </ul>
+    </div>
+    <div class="titolo">
+        <h1>Registrazione nuovo iscritto</h1>
+    </div>
+    <div class="corpo">
+        <br>
+        <h2>Compila il form per registrarti</h2>
+        <br>
+        <form action="scripts/gestioneform.php" method="post">
+            <table style="margin-left: auto; margin-right: auto;">
+                <tr>
+                    <td class="form">
+                        <p class="form">Nome:</p><input class="text" type="text" name="Nome"
+                            placeholder="Inserisci il nome qui">
+                    </td>
+                    <td class="form">
+                        <p class="form">Cognome:</p><input class="text" type="text" name="Cognome"
+                            placeholder="Inserisci il cognome qui">
+                    </td>
+                    <td class="form">
+                        <p class="form">Eta':</p><input class="text" type="number" name="Eta" min="0" max="120"
+                            placeholder="Inserisci l'eta' qui">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form">
+                        <p class="form">Genere:</p>
+                        <input type="radio" id="M" name="Genere" value="M">
+                        <label for="M">M</label><br>
+                        <input type="radio" id="F" name="Genere" value="F">
+                        <label for="F">F</label><br>
+                        <input type="radio" id="Altro" name="Genere" value="Altro">
+                        <label for="Altro">Altro</label>
+                    </td>
+                    <td class="form">
+                        <p class="form">Citta' di residenza:</p><input class="text" type="text" name="citta"
+                            placeholder="Inserisci la citta' di residenza">
+                    </td>
+                    <td class="form">
+                        <p class="form">Scegli i corsi: </p>
+                        <fieldset>
+                            <input type="checkbox" id="pilates" name="corsi[]" value="Pilates"
+                                onclick="aggiornaTotale('pilates')">
+                            <label for="pilates">Pilates</label><br>
+
+                            <input type="checkbox" id="yoga" name="corsi[]" value="Yoga" onclick="aggiornaTotale('yoga')">
+                            <label for="yoga">Yoga</label><br>
+
+                            <input type="checkbox" id="kickboxing" name="corsi[]" value="Kickboxing"
+                                onclick="aggiornaTotale('kickboxing')">
+                            <label for="kickboxing">Kickboxing</label><br>
+
+                            <input type="checkbox" id="danza" name="corsi[]" value="Danza"
+                                onclick="aggiornaTotale('danza')">
+                            <label for="danza">Danza</label><br>
+
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+            <input class="bottone" type="submit" value="Clicca qui per inviare i dati!">
+        </form>
+    </div>
+    <div class="footer">
+        <hr>
+        <p class="informazioni" style="text-align: center;">Tutti i diritti delle immagini vanno ai rispettivi autori,
+            questo sito web e' stato creato per scopi educativi<br>(c) Luca Dentello, 2022-2023</p>
+    </div>
+</body>
+
+</html>

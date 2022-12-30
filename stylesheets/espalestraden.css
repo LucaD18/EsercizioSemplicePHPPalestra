@@ -1,0 +1,206 @@
+/* Titoli e tag importanti */
+
+html {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+	color: #ece5e5;
+	font-style: italic;
+}
+
+h2 {
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 30px;
+	color: #c20000;
+	font-style: italic;
+}
+
+input.text {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+input.bottone {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background-color: #802b00;
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+}
+input.bottone:hover {
+	background-color: #e64d00;
+	cursor: pointer;
+}
+/* Divisione dei Div */
+
+div.navbar {
+	margin-bottom: auto;
+}
+
+div.titolo {
+	margin: auto;
+	background: linear-gradient(#A54612, #b14d4d, #A54612);
+	padding: 45px;
+}
+
+div.corpo {
+	background: linear-gradient(#E5E4E2, #D3D3D3, #C0C0C0, #A9A9A9);
+	padding: 45px;
+}
+
+div.contenitore-colonne {
+	display: flex;
+	flex-wrap: wrap;
+	align-self: center;
+}
+
+div.colonna {
+	margin: 10px;
+	width: 20%;
+	border: 2px dotted red;
+	padding: 10px;
+}
+
+div.colonna h3 {
+	font-size: 20px;
+}
+
+div.colonna img {
+	width: 100%;
+	height: auto;
+}
+
+div.footer {
+	background: linear-gradient(#A9A9A9, #C0C0C0, #D3D3D3, #E5E4E2);
+	padding: 45px;
+}
+
+/* Collegamenti esterni in diverse forme */
+
+a.external {
+	font-size: 20px;
+	text-decoration: none;
+	color: red;
+}
+
+a:hover {
+	color: #9efd9e;
+	font-style: italic;
+	transition: .4s ease color;
+}
+
+/* Struttura tabella */
+
+th,
+td {
+	padding: 10px;
+	padding-bottom: 70px;
+	padding-right: 20px;
+}
+
+td.form {
+	padding-right: 100px;
+}
+
+/* Struttura paragrafi */
+
+p {
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+}
+
+p.footer {
+	padding: 10px;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+p.tabella {
+	text-align: center;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+p.form {
+	font-weight: 450;
+	font-size: 20px;
+}
+
+p.informazioni {
+	font-weight: 450;
+	font-size: 15px;
+	color: #686666;
+}
+
+img.tabella {
+	max-width: 100%;
+	height: auto;
+}
+
+img.check {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Struttura elementi navbar */
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #802b00;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+li.nav {
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	float: left;
+	padding-right: 20px;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background-color: #e64d00;
+}
+
+/* Altro */
+
+.active {
+	background-color: red;
+}
+
+.due-elementi {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.due-child {
+	border: 1px solid black;
+}
