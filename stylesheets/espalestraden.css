@@ -153,6 +153,8 @@ img.tabella {
 }
 
 img.check {
+	width: 200px;
+	height: auto;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
