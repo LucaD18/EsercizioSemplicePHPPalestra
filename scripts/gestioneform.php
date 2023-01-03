@@ -29,15 +29,25 @@
         $genere = $_POST["Genere"];
         $citta = $_POST["citta"];
         $corsi = $_POST["corsi"];
+        $prezzi = array("Yoga" => 10, "Pilates" => 40, "Danza" => 35, "Kickboxing" => 60);
         $totcorsi = " ";
+        $totalePrezzo = 0;
         for ($i = 0; $i < count($corsi); $i++) {
-            $totcorsi . $corsi[$i] . " ";
+            $totcorsi = $totcorsi . $corsi[$i] . " ";
+            $totalePrezzo = $totalePrezzo + $prezzi[$corsi[$i]];
         }
-        echo "<p class='tabella'>Benvenuto " . $nome . " " . $cognome . "!<br>Con dati: " . $eta . " " . $genere . " " . $citta . " " . $totcorsi . "<br></p>";
-
+        echo "<p class='tabella'>Benvenuto " . $nome . " " . $cognome . "!<br>Ti confermiamo che la registrazione è effettuata con successo.<br><br>Ecco i dati inseriti nei nostri sistemi: <br>Eta': " . $eta . "| Genere: " . $genere . "| Residenza: " . $citta . "<br>Corsi scelti:  " . $totcorsi . "<br></p>";
+        echo "<br><p class='tabella'>Il totale dei corsi scelti e' di: " . $totalePrezzo . " euro.</p>";
         ?>
+        <br>
+        <p class="tabella">Clicca <a style="text-decoration: none;" href="../index.html">QUI</a> per tornare alla pagina principale.</p>
     </div>
 
+    <div class="footer">
+        <hr>
+        <p class="informazioni" style="text-align: center;">Tutti i diritti delle immagini vanno ai rispettivi autori,
+            questo sito web e' stato creato per scopi educativi<br>(c) Luca Dentello, 2022-2023</p>
+    </div>
 </body>
 
 </html>
