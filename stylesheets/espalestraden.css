@@ -43,6 +43,7 @@ input.bottone {
 	font-size: 20px;
 	font-weight: 600;
 }
+
 input.bottone:hover {
 	background-color: #e64d00;
 	cursor: pointer;

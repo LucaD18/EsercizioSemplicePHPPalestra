@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <script src="scripts/calcoloTotale.js"></script>
+    
     <div class="navbar">
         <ul>
             <li class="nav"><a class="active" href="index.html">Home</a></li>
@@ -23,7 +23,7 @@
         <br>
         <h2>Compila il form per registrarti</h2>
         <br>
-        <form action="scripts/gestioneform.php" method="post">
+        <form action="scripts/gestioneform.php" method="post" id="invia">
             <table style="margin-left: auto; margin-right: auto;">
                 <tr>
                     <td class="form">
@@ -75,7 +75,8 @@
                     </td>
                 </tr>
             </table>
-            <input class="bottone" type="submit" value="Clicca qui per inviare i dati!" onclick="">
+            <input class="bottone"  id="botton" onclick="submitEverything();" type="button" value="Clicca qui per inviare i dati!">
+            <script src="scripts/controlloDati.js"></script>
         </form>
     </div>
     <div class="footer">
